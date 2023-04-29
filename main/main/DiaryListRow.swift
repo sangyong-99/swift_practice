@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DiaryListRow: View {
     @State var diaryRowData: DiaryListDataStruct
+    @State var isDetailOpening = false
     var body: some View {
         VStack{
             HStack{
@@ -25,6 +26,10 @@ struct DiaryListRow: View {
             }
             .onTapGesture {
                 print(diaryRowData.page)
+                isDetailOpening = true
+            }
+            .sheet(isPresented: $isDetailOpening){
+                DiaryDetailView(diaryRowData: diaryRowData)
             }
             Divider()
                 

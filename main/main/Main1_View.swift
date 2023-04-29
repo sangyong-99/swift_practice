@@ -13,7 +13,7 @@ struct Main1_View: View {
     var body: some View {
         VStack(alignment: .leading){
             
-            Text("Page 23. 지금 당장 가고 싶은 곳")
+            Text("Page 14. 지금 당장 가고 싶은 곳")
                 .font(.system(size: 17))
                 .bold()
             
