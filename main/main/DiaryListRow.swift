@@ -25,7 +25,7 @@ struct DiaryListRow: View {
                     
             }
             .onTapGesture {
-                //클릭했을때 DiaryDetailView
+                print(pages)
             }
             Divider()
                 

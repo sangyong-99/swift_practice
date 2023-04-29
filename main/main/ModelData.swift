@@ -17,38 +17,22 @@ struct DiaryListDataStruct {
     var question:String
 }
 
-var diaryListDataArray:[DiaryListDataStruct] = [DiaryListDataStruct(page: 1, question: "지금 당장 가고 싶은 곳"),
-                                                DiaryListDataStruct(page: 2, question: "가족 중에 누가 제일 좋아"),
-                                                DiaryListDataStruct(page: 3, question: "오늘의 기분을 이모티콘으로!"),
-                                                DiaryListDataStruct(page: 4, question: "엄마에게 칭찬 3가지"),
-                                                DiaryListDataStruct(page: 5, question: "최근에 있었던 속상한 일"),
-                                                DiaryListDataStruct(page: 6, question: "어릴 적 꿈"),
-                                                DiaryListDataStruct(page: 7, question: "가장 좋아하는 색"),
-                                                DiaryListDataStruct(page: 8, question: "좋아하는 동물이나 식물"),
-                                                DiaryListDataStruct(page: 9, question: "지금 인생에서 후회하는 일"),
-                                                DiaryListDataStruct(page: 10, question: "가장 어려웠던 결정"),
-                                                DiaryListDataStruct(page: 11, question: "가족 여행지중 최고였던 곳"),
-                                                DiaryListDataStruct(page: 12, question: "가장 인상깊었던 생일선물"),
-                                                DiaryListDataStruct(page: 13, question: "가족이 가장 힘이된 순간"),
-                                                DiaryListDataStruct(page: 14, question: "가장 잘 나온 가족 사진은"),
-                                                
-]
-
-
 
 class DiaryListData: ObservableObject {
-    @Published var diaryListData: [Int: String] = [1: "지금 당장 가고 싶은 곳",
-                                                   2: "가족 중에 누가 제일 좋아",
-                                                   3: "오늘의 기분을 이모티콘으로!",
-                                                   4: "엄마에게 칭찬 3가지",
-                                                   5: "최근에 있었던 속상한 일",
-                                                   6: "어릴 적 꿈",
-                                                   7: "가장 좋아하는 색",
-                                                   8: "좋아하는 동물이나 식물",
-                                                   9: "지금 인생에서 후회하는 일",
-                                                   10: "가장 어려웠던 결정",
-                                                   11: "가족 여행지중 최고였던 곳",
-                                                   12: "가장 인상깊었던 생일선물",
-                                                   13: "가족이 가장 힘이된 순간",
-                                                   14: "가장 잘 나온 가족 사진은"]
+    @Published var diaryListData:[DiaryListDataStruct] = [DiaryListDataStruct(page: 1, question: "지금 당장 가고 싶은 곳"),
+                                                    DiaryListDataStruct(page: 2, question: "가족 중에 누가 제일 좋아"),
+                                                    DiaryListDataStruct(page: 3, question: "오늘의 기분을 이모티콘으로!"),
+                                                    DiaryListDataStruct(page: 4, question: "엄마에게 칭찬 3가지"),
+                                                    DiaryListDataStruct(page: 5, question: "최근에 있었던 속상한 일"),
+                                                    DiaryListDataStruct(page: 6, question: "어릴 적 꿈"),
+                                                    DiaryListDataStruct(page: 7, question: "가장 좋아하는 색"),
+                                                    DiaryListDataStruct(page: 8, question: "좋아하는 동물이나 식물"),
+                                                    DiaryListDataStruct(page: 9, question: "지금 인생에서 후회하는 일"),
+                                                    DiaryListDataStruct(page: 10, question: "가장 어려웠던 결정"),
+                                                    DiaryListDataStruct(page: 11, question: "가족 여행지중 최고였던 곳"),
+                                                    DiaryListDataStruct(page: 12, question: "가장 인상깊었던 생일선물"),
+                                                    DiaryListDataStruct(page: 13, question: "가족이 가장 힘이된 순간"),
+                                                    DiaryListDataStruct(page: 14, question: "가장 잘 나온 가족 사진은"),
+    ]
 }
+

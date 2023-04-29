@@ -12,8 +12,8 @@ struct Main2_View: View {
     var body: some View {
         VStack {
             ScrollView{
-                ForEach(0..<diaryListDataArray.count) {index in
-                    DiaryListRow(pages: diaryListDataArray[index].page, questions: diaryListDataArray[index].question)
+                ForEach(0..<DLD.diaryListData.count) {index in
+                    DiaryListRow(pages: DLD.diaryListData[index].page, questions: DLD.diaryListData[index].question)
                     
                 }
             }
