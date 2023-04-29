@@ -9,8 +9,6 @@ import SwiftUI
 
 struct DiaryListRow: View {
     @State var diaryRowData: DiaryListDataStruct
-//    @State var pages: Int
-//    @State var questions: String
     var body: some View {
         VStack{
             HStack{
