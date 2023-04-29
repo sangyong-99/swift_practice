@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct DiaryListRow: View {
-    @State var pages: Int
-    @State var questions: String
+    @State var diaryRowData: DiaryListDataStruct
+//    @State var pages: Int
+//    @State var questions: String
     var body: some View {
         VStack{
             HStack{
-                Text("Page \(pages). ")
+                Text("Page \(diaryRowData.page). ")
                     .padding(12)
 //                    .border(Color.black, width: 1)
 
-                Text("\(questions)")
+                Text("\(diaryRowData.question)")
 //                    .border(Color.black, width: 1)
                 Spacer()
                 
@@ -25,7 +26,7 @@ struct DiaryListRow: View {
                     
             }
             .onTapGesture {
-                print(pages)
+                print(diaryRowData.page)
             }
             Divider()
                 
@@ -43,7 +44,7 @@ struct DiaryListRow: View {
 
 struct DiaryListRow_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryListRow(pages: 1, questions: "지금 당장 가고 싶은 곳")
+        DiaryListRow(diaryRowData: DiaryListDataStruct(page: 1, question: "지금 당장 가고 싶은 곳"))
             
     }
 }
