@@ -26,13 +26,14 @@ struct DiaryDetailView: View {
                 
                 //            diaryRowData.image![0]
                 
-                let dkdk = diaryRowData.image?.count ?? 0
+                let diaryRowData_Count = diaryRowData.image?.count ?? 0
+                
                 if(diaryRowData.image != nil){
                     
                     
                     
                     
-                    ForEach (0..<dkdk){index in
+                    ForEach (0..<diaryRowData_Count){index in
                         if index % 2 == 0 {
                             VStack {
                                 HStack{
@@ -46,15 +47,18 @@ struct DiaryDetailView: View {
                                             .frame(width: 150, height: 150)
                                     }
                                     Spacer()
-                                    if let imagess = diaryRowData.image![index + 1]{
-                                        imagess
-                                            .resizable()
-                                            .frame(width: 150, height: 150)
-                                    }else{
-                                        Image("noImage")
-                                            .resizable()
-                                            .frame(width: 150, height: 150)
+                                    if index + 1 < diaryRowData_Count{
+                                        if let imagess = diaryRowData.image![index + 1]{
+                                            imagess
+                                                .resizable()
+                                                .frame(width: 150, height: 150)
+                                        }else{
+                                            Image("noImage")
+                                                .resizable()
+                                                .frame(width: 150, height: 150)
+                                        }
                                     }
+                                    
                                 }
                             }
                             .padding(20)
