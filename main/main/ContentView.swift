@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var VSClass: ViewSelection = ViewSelection()
     @StateObject var DLD: DiaryListData = DiaryListData()
+    @StateObject var TQ: TodayQuestion = TodayQuestion()
     var body: some View {
         VStack {
             
@@ -19,7 +20,7 @@ struct ContentView: View {
             Two_Button(VSClass: VSClass)
                 .padding(.top, 10)
             if VSClass.viewSelection{
-                Main1_View()
+                Main1_View(DLD: DLD, TQ: TQ)
                 FamilyStatus()
                 Spacer()
                 

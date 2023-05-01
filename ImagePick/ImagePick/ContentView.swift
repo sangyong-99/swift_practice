@@ -10,13 +10,24 @@ import SwiftUI
 struct ContentView: View {
     @State var isPickerShowing = false
     @State var selectedImage: UIImage?
+    @State var imagess:[Image?] = []
     var body: some View {
         VStack{
-            if selectedImage != nil{
-                Image(uiImage: selectedImage!)
-                    .resizable()
-                    .frame(width: 200, height: 200)
+            Text("\(imagess.count)")
+            ForEach(imagess.indices, id: \.self) { index in
+                if let image = imagess[index] {
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                }
             }
+            
+//            if selectedImage != nil{
+//                Image(uiImage: selectedImage!)
+//                    .resizable()
+//                    .frame(width: 200, height: 200)
+//            }
             Button {
                 isPickerShowing = true
             } label: {
@@ -25,7 +36,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image Picker
-            ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
+            ImagePicker(imagess: $imagess, selectedImage: $selectedImage, isPickerShowing: $isPickerShowing )
         }
         
     }
@@ -36,3 +47,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

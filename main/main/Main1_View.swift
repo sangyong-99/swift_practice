@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Main1_View: View {
+    @StateObject var DLD: DiaryListData
+    @StateObject var TQ: TodayQuestion
     @State var isPickerShowing = false
     @State var selectedImage: UIImage?
     var body: some View {
@@ -17,9 +19,9 @@ struct Main1_View: View {
                 .font(.system(size: 17))
                 .bold()
             
-            
-            
-            
+//            DLD.diaryListData[0].image?.append(Image("3"))
+//            DLD.diaryListData[0].image![0]
+//            DLD.diaryListData[0].image?.append(contentsOf: selectedImage)
             if selectedImage != nil{
                 Image(uiImage: selectedImage!)      //이미지 선택시 보여주는 코드
                     .resizable()
@@ -71,6 +73,6 @@ struct Main1_View: View {
 
 struct Main1_View_Previews: PreviewProvider {
     static var previews: some View {
-        Main1_View()
+        Main1_View(DLD: DiaryListData(), TQ: TodayQuestion())
     }
 }

@@ -12,6 +12,11 @@ class ViewSelection: ObservableObject {
     @Published var viewSelection: Bool = true
 }
 
+class TodayQuestion: ObservableObject {
+    @Published var todayPage: Int = 14
+    @Published var question:String = "가장 잘 나온 가족 사진은"
+}
+
 struct DiaryListDataStruct {
     var page:Int
     var question:String
