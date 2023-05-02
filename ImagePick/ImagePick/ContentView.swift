@@ -11,11 +11,15 @@ struct ContentView: View {
     @State var isPickerShowing = false
     @State var selectedImage: UIImage?
     @State var imagess:[Image?] = []
+    @StateObject var so1: dkdk = dkdk()
+    
+    
     var body: some View {
         VStack{
-            Text("\(imagess.count)")
-            ForEach(imagess.indices, id: \.self) { index in
-                if let image = imagess[index] {
+            
+            Text("\(so1.imagesss.count)")
+            ForEach(so1.imagesss.indices, id: \.self) { index in
+                if let image = so1.imagesss[index] {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -36,7 +40,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image Picker
-            ImagePicker(imagess: $imagess, selectedImage: $selectedImage, isPickerShowing: $isPickerShowing )
+            ImagePicker(so1: so1, selectedImage: $selectedImage, isPickerShowing: $isPickerShowing )
         }
         
     }

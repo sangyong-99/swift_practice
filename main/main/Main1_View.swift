@@ -15,18 +15,26 @@ struct Main1_View: View {
     var body: some View {
         VStack(alignment: .leading){
             
-            Text("Page 14. 지금 당장 가고 싶은 곳")
+            Text("Page \(TQ.todayPage). \(TQ.question)")
                 .font(.system(size: 17))
                 .bold()
             
 //            DLD.diaryListData[0].image?.append(Image("3"))
 //            DLD.diaryListData[0].image![0]
 //            DLD.diaryListData[0].image?.append(contentsOf: selectedImage)
-            if selectedImage != nil{
-                Image(uiImage: selectedImage!)      //이미지 선택시 보여주는 코드
-                    .resizable()
-                    .frame(width: 200, height: 200)
-            }
+            
+            
+            
+            
+//            if selectedImage != nil{
+//                Image(uiImage: selectedImage!)      //이미지 선택시 보여주는 코드
+//                    .resizable()
+//                    .frame(width: 200, height: 200)
+//            }
+            
+            
+            
+            
             //            Button {
             //                isPickerShowing = true
             //            } label: {
@@ -65,7 +73,7 @@ struct Main1_View: View {
         .padding(14)
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image Picker
-            ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
+            ImagePicker(DLD: DLD, TQ: TQ,selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
         }
         
     }

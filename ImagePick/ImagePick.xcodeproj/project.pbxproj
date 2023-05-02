@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2EB09929FFABC500623B2F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EB09829FFABC500623B2F /* ModelData.swift */; };
 		5ED37F8929FAC9AC00D43E35 /* ImagePickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED37F8829FAC9AC00D43E35 /* ImagePickApp.swift */; };
 		5ED37F8B29FAC9AC00D43E35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED37F8A29FAC9AC00D43E35 /* ContentView.swift */; };
 		5ED37F8D29FAC9AD00D43E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED37F8C29FAC9AD00D43E35 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E2EB09829FFABC500623B2F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		5ED37F8529FAC9AC00D43E35 /* ImagePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED37F8829FAC9AC00D43E35 /* ImagePickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickApp.swift; sourceTree = "<group>"; };
 		5ED37F8A29FAC9AC00D43E35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				5ED37F8829FAC9AC00D43E35 /* ImagePickApp.swift */,
 				5ED37F9629FAD1A500D43E35 /* ImagePicker.swift */,
 				5ED37F8A29FAC9AC00D43E35 /* ContentView.swift */,
+				5E2EB09829FFABC500623B2F /* ModelData.swift */,
 				5ED37F8C29FAC9AD00D43E35 /* Assets.xcassets */,
 				5ED37F8E29FAC9AD00D43E35 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ED37F9729FAD1A500D43E35 /* ImagePicker.swift in Sources */,
+				5E2EB09929FFABC500623B2F /* ModelData.swift in Sources */,
 				5ED37F8B29FAC9AC00D43E35 /* ContentView.swift in Sources */,
 				5ED37F8929FAC9AC00D43E35 /* ImagePickApp.swift in Sources */,
 			);

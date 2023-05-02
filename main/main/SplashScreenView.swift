@@ -18,26 +18,25 @@ struct SplashScreenView: View {
         } else {
             VStack{
                 VStack{
-                    Image("familyImage1")
+                    Image("startImage")
                         .resizable()
-                        .frame(width: 260, height: 197)
-                        .foregroundColor(.red)
-                    Text("오늘의 은퇴")
-                        .bold()
-                        .font(Font.custom("Baskerbille-Bold", size: 26))
-                        .foregroundColor(.black.opacity(0.80))
+                        .frame(width: 149, height: 514)
+//                    Text("오늘의 은퇴")
+//                        .bold()
+//                        .font(Font.custom("Baskerbille-Bold", size: 26))
+//                        .foregroundColor(.black.opacity(0.80))
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
                 .onAppear {
-                    withAnimation(.easeIn(duration: 1.2)){
+                    withAnimation(.easeIn(duration: 1.0)){
                         self.size = 0.9
                         self.opacity = 1.0
                     }
                 }
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.7){
                     withAnimation {
                         self.isActive = true
                     }

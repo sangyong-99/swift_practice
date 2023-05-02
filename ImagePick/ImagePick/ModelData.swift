@@ -8,26 +8,14 @@
 import Foundation
 import SwiftUI
 
-class ViewSelection: ObservableObject {
-    @Published var viewSelection: Bool = true
-}
-
-class TodayQuestion: ObservableObject {
-    @Published var todayPage: Int = 14
-    @Published var question:String = "가장 잘 나온 가족 사진은"
+class dkdk: ObservableObject{
+    @Published var imagesss:[Image?] = [Image("1")]
 }
 
 struct DiaryListDataStruct {
     var page:Int
     var question:String
     var image: [Image?]?
-    
-    init(page: Int, question: String, image: [Image?]? = nil) {
-        self.page = page
-        self.question = question
-        self.image = image
-    }
-    
     
     
 }
@@ -48,7 +36,7 @@ class DiaryListData: ObservableObject {
      DiaryListDataStruct(page: 11, question: "가족 여행지중 최고였던 곳", image: [Image("1"), nil, Image("3"), Image("4")]),
      DiaryListDataStruct(page: 12, question: "가장 인상깊었던 생일선물", image: [Image("1"), nil, Image("3"), Image("4")]),
      DiaryListDataStruct(page: 13, question: "가족이 가장 힘이된 순간", image: [Image("1"), nil, Image("3"), Image("4")]),
-     DiaryListDataStruct(page: 14, question: "가장 잘 나온 가족 사진은", image: []),
+     DiaryListDataStruct(page: 14, question: "가장 잘 나온 가족 사진은"),
     ]
 }
 

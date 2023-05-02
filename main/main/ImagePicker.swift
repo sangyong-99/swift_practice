@@ -10,7 +10,8 @@ import UIKit
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    
+    @StateObject var DLD: DiaryListData
+    @StateObject var TQ: TodayQuestion
     @Binding var selectedImage: UIImage?
     @Binding var isPickerShowing: Bool
     func makeUIViewController(context: Context) -> some UIViewController {
@@ -47,6 +48,8 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async {
                 self.parent.selectedImage = image
+                self.parent.DLD.diaryListData[(self.parent.TQ.todayPage) - 1].image?.append(Image(uiImage: self.parent.selectedImage!))
+                
             }
                 
         }
