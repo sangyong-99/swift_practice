@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E197D8629FB5F200072BE72 /* main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E197D8629FB5F200072BE72 /* retirement_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = retirement_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E197D8929FB5F200072BE72 /* mainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainApp.swift; sourceTree = "<group>"; };
 		5E197D8B29FB5F200072BE72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E197D8D29FB5F210072BE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		5E197D7D29FB5F200072BE72 = {
 			isa = PBXGroup;
 			children = (
-				5E197D8829FB5F200072BE72 /* main */,
+				5E197D8829FB5F200072BE72 /* retirement_project */,
 				5E197D8729FB5F200072BE72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,12 +63,12 @@
 		5E197D8729FB5F200072BE72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E197D8629FB5F200072BE72 /* main.app */,
+				5E197D8629FB5F200072BE72 /* retirement_project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E197D8829FB5F200072BE72 /* main */ = {
+		5E197D8829FB5F200072BE72 /* retirement_project */ = {
 			isa = PBXGroup;
 			children = (
 				5E197D8929FB5F200072BE72 /* mainApp.swift */,
@@ -86,7 +86,7 @@
 				5E197D8D29FB5F210072BE72 /* Assets.xcassets */,
 				5E197D8F29FB5F210072BE72 /* Preview Content */,
 			);
-			path = main;
+			path = retirement_project;
 			sourceTree = "<group>";
 		};
 		5E197D8F29FB5F210072BE72 /* Preview Content */ = {
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E197D8529FB5F200072BE72 /* main */ = {
+		5E197D8529FB5F200072BE72 /* retirement_project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E197D9429FB5F210072BE72 /* Build configuration list for PBXNativeTarget "main" */;
+			buildConfigurationList = 5E197D9429FB5F210072BE72 /* Build configuration list for PBXNativeTarget "retirement_project" */;
 			buildPhases = (
 				5E197D8229FB5F200072BE72 /* Sources */,
 				5E197D8329FB5F200072BE72 /* Frameworks */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = main;
+			name = retirement_project;
 			productName = main;
-			productReference = 5E197D8629FB5F200072BE72 /* main.app */;
+			productReference = 5E197D8629FB5F200072BE72 /* retirement_project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E197D8129FB5F200072BE72 /* Build configuration list for PBXProject "main" */;
+			buildConfigurationList = 5E197D8129FB5F200072BE72 /* Build configuration list for PBXProject "retirement_project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E197D8529FB5F200072BE72 /* main */,
+				5E197D8529FB5F200072BE72 /* retirement_project */,
 			);
 		};
 /* End PBXProject section */
@@ -306,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"main/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"retirement_project/Preview Content\"";
 				DEVELOPMENT_TEAM = C3U3CZ666D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangyong.main;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangyong.retirement_project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"main/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"retirement_project/Preview Content\"";
 				DEVELOPMENT_TEAM = C3U3CZ666D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangyong.main;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangyong.retirement_project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E197D8129FB5F200072BE72 /* Build configuration list for PBXProject "main" */ = {
+		5E197D8129FB5F200072BE72 /* Build configuration list for PBXProject "retirement_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E197D9229FB5F210072BE72 /* Debug */,
@@ -369,7 +369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E197D9429FB5F210072BE72 /* Build configuration list for PBXNativeTarget "main" */ = {
+		5E197D9429FB5F210072BE72 /* Build configuration list for PBXNativeTarget "retirement_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E197D9529FB5F210072BE72 /* Debug */,
