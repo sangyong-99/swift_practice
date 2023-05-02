@@ -1,6 +1,6 @@
 //
 //  mainApp.swift
-//  main
+//  retirement_project
 //
 //  Created by 신상용 on 2023/04/28.
 //
