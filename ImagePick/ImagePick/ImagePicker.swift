@@ -49,7 +49,6 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
             DispatchQueue.main.async {
                 self.parent.selectedImage = image
                 self.parent.so1.imagesss.append(Image(uiImage: self.parent.selectedImage!))
-//                self.parent.imagess.append(Image(uiImage: self.parent.selectedImage!))
             }
                 
         }

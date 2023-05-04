@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State var isPickerShowing = false
     @State var selectedImage: UIImage?
-    @State var imagess:[Image?] = []
     @StateObject var so1: dkdk = dkdk()
     
     
