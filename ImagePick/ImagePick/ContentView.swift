@@ -41,7 +41,9 @@ struct ContentView: View {
                 Image(uiImage: image11)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100)
+//                    .aspectRatio(contentMode: .fill)
+                
+                    .frame(width: 329, height: 219)
             }
             
             
