@@ -12,7 +12,7 @@ class dkdk: ObservableObject{
     @Published var imagesss:[Image?] = [Image("1")]
 }
 
+class datas: ObservableObject{
+    @Published var selectedImage: UIImage? = UIImage(named: "1")
 
-
-
-
+}

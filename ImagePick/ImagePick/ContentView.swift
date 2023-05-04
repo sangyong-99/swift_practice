@@ -6,25 +6,39 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @State var isPickerShowing = false
-    @State var selectedImage: UIImage?
-    @StateObject var so1: dkdk = dkdk()
-    
+//    @State var selectedImage: UIImage?
+//    @State var imagess:[Image?] = []
+//    @StateObject var so1: dkdk = dkdk()
+    @StateObject var datasss: datas = datas()
+
+
     
     var body: some View {
         VStack{
             
-            Text("\(so1.imagesss.count)")
-            ForEach(so1.imagesss.indices, id: \.self) { index in
-                if let image = so1.imagesss[index] {
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100, height: 100)
-                }
+//            Text("\(so1.imagesss.count)")
+//            ForEach(so1.imagesss.indices, id: \.self) { index in
+//                if let image = so1.imagesss[index] {
+//                    image
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 100, height: 100)
+//                }
+//            }
+            
+            if let image = datasss.selectedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 100)
             }
+            
+            
+            
             
 //            if selectedImage != nil{
 //                Image(uiImage: selectedImage!)
@@ -39,7 +53,8 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image Picker
-            ImagePicker(so1: so1, selectedImage: $selectedImage, isPickerShowing: $isPickerShowing )
+//            ImagePicker(so1: so1, selectedImage: $datasss.selectedImage, isPickerShowing: $isPickerShowing )
+            ImagePicker(selectedImage: $datasss.selectedImage, isPickerShowing: $isPickerShowing )
         }
         
     }

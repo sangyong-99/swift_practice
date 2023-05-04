@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    @StateObject var so1: dkdk
+//    @StateObject var so1: dkdk
     
     @Binding var selectedImage: UIImage?
     @Binding var isPickerShowing: Bool
@@ -48,7 +48,8 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async {
                 self.parent.selectedImage = image
-                self.parent.so1.imagesss.append(Image(uiImage: self.parent.selectedImage!))
+//                self.parent.so1.imagesss.append(Image(uiImage: self.parent.selectedImage!))
+//                self.parent.imagess.append(Image(uiImage: self.parent.selectedImage!))
             }
                 
         }
