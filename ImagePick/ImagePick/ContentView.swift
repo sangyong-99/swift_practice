@@ -30,8 +30,15 @@ struct ContentView: View {
 //                }
 //            }
             
-            if let image = datasss.selectedImage {
-                Image(uiImage: image)
+//            if let image = datasss.selectedImage {
+//                Image(uiImage: image)
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 100, height: 100)
+//            }
+            if let dkdk = UserDefaults.standard.data(forKey: "selectedImage1"),
+               let image11 = UIImage(data: dkdk){
+                Image(uiImage: image11)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100)
@@ -54,7 +61,7 @@ struct ContentView: View {
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image Picker
 //            ImagePicker(so1: so1, selectedImage: $datasss.selectedImage, isPickerShowing: $isPickerShowing )
-            ImagePicker(selectedImage: $datasss.selectedImage, isPickerShowing: $isPickerShowing )
+            ImagePicker(selectedImage: $datasss.selectedImage, isPickerShowing: $isPickerShowing )  //selectedImage 필요 없다.
         }
         
     }

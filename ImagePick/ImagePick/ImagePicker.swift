@@ -47,7 +47,12 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async {
+                if let imageData = image.jpegData(compressionQuality: 1.0){     //image를 압축하여 imageData라는 변수에 저장
+                    UserDefaults.standard.set(imageData, forKey: "selectedImage1")  //UserDefaults 에 imageData저장
+                }
+                
                 self.parent.selectedImage = image
+                
 //                self.parent.so1.imagesss.append(Image(uiImage: self.parent.selectedImage!))
 //                self.parent.imagess.append(Image(uiImage: self.parent.selectedImage!))
             }
