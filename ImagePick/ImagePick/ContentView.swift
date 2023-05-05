@@ -36,8 +36,8 @@ struct ContentView: View {
 //                    .aspectRatio(contentMode: .fit)
 //                    .frame(width: 100, height: 100)
 //            }
-            if let dkdk = UserDefaults.standard.data(forKey: "selectedImage1"),
-               let image11 = UIImage(data: dkdk){
+            if let UserDefaults_image = UserDefaults.standard.data(forKey: "selectedImage1"),
+               let image11 = UIImage(data: UserDefaults_image){
                 Image(uiImage: image11)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
