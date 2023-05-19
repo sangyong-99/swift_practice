@@ -7,25 +7,20 @@
 
 import SwiftUI
 
-struct Line {
-    var points = [CGPoint]()
-    var color: Color = .black
-    var lineWidth: Double = 2
-    
-}
+
 
 struct ContentView: View {
     
-    @State private var currentLine = Line()
-    @State private var lines: [Line] = []
+    @State private var currentLine:[CGPoint] = []
+    @State private var lines: [[CGPoint]] = []
     var body: some View {
         VStack {
             
             Canvas { context, size in
                 for line in lines {
                     var path = Path()
-                    path.addLines(line.points)
-                    context.stroke(path, with: .color(line.color), lineWidth: line.lineWidth)
+                    path.addLines(line)
+                    context.stroke(path, with: .color(Color.black), lineWidth: 2)
                 }
                 
                 
@@ -33,11 +28,11 @@ struct ContentView: View {
             }.gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
             .onChanged({value in
                 let newPoint = value.location
-                currentLine.points.append(newPoint)
+                currentLine.append(newPoint)
                 self.lines.append(currentLine)
             })
                 .onEnded({value in
-                    self.currentLine = Line(points: [])
+                    self.currentLine = []
                 })
             )
             .background(Color.gray)

@@ -2,7 +2,7 @@
 //  MapView.swift
 //  Landmarks
 //
-//  Created by 신상용 on 2023/04/20.
+//  Created by 김종욱 on 2023/05/08.
 //
 
 import SwiftUI
@@ -10,11 +10,9 @@ import MapKit
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
-        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-    )
-    
-    
+          center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
+          span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+      )
     var body: some View {
         Map(coordinateRegion: $region)
     }
