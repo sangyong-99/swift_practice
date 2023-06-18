@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: {
-            chargeDataManager.fetchDatas("https://apis.data.go.kr/B552584/EvCharger/getChargerInfo?numOfRows=10&pageNo=1&zcode=47&zscode=47190&dataType=JSON&serviceKey=3fN5XeyWbFOVDNr8xbmPsTXRwyTgskEJ6ghj0LFf131CQm3X52Rn%2BCMEwcttKysIzwU%2B45HuKQ4vXWX%2BC8LJ%2BQ%3D%3D")
+            chargeDataManager.fetchDatas("https://apis.data.go.kr/B552584/EvCharger/getChargerInfo?numOfRows=10&pageNo=1&zscode=47190&dataType=JSON&serviceKey=3fN5XeyWbFOVDNr8xbmPsTXRwyTgskEJ6ghj0LFf131CQm3X52Rn%2BCMEwcttKysIzwU%2B45HuKQ4vXWX%2BC8LJ%2BQ%3D%3D")
 //            sample_data()
         })
     }

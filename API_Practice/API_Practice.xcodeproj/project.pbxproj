@@ -18,6 +18,8 @@
 		5EA1137F2A3EB73B00EA4342 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1137E2A3EB73B00EA4342 /* MainView.swift */; };
 		5EA113812A3EB76900EA4342 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA113802A3EB76900EA4342 /* MapView.swift */; };
 		5EA113832A3EB7A500EA4342 /* GuideLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA113822A3EB7A500EA4342 /* GuideLineView.swift */; };
+		5EA113A12A3EF56000EA4342 /* CoordinateToZscodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA113A02A3EF56000EA4342 /* CoordinateToZscodeManager.swift */; };
+		5EA113A32A3EF61500EA4342 /* ZscodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA113A22A3EF61500EA4342 /* ZscodeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5EA1137E2A3EB73B00EA4342 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5EA113802A3EB76900EA4342 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5EA113822A3EB7A500EA4342 /* GuideLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideLineView.swift; sourceTree = "<group>"; };
+		5EA113A02A3EF56000EA4342 /* CoordinateToZscodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateToZscodeManager.swift; sourceTree = "<group>"; };
+		5EA113A22A3EF61500EA4342 /* ZscodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZscodeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA113692A3E86AA00EA4342 /* ChargingStationModel.swift */,
+				5EA113A22A3EF61500EA4342 /* ZscodeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA113732A3E9A4900EA4342 /* ChargeDataManager.swift */,
+				5EA113A02A3EF56000EA4342 /* CoordinateToZscodeManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -216,12 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA113A32A3EF61500EA4342 /* ZscodeData.swift in Sources */,
 				5EA113592A3DE35D00EA4342 /* ContentView.swift in Sources */,
 				5EA113812A3EB76900EA4342 /* MapView.swift in Sources */,
 				5EA1137F2A3EB73B00EA4342 /* MainView.swift in Sources */,
 				5EA1136F2A3E8D0500EA4342 /* Constant.swift in Sources */,
 				5EA113712A3E948800EA4342 /* SampleDataFunction.swift in Sources */,
 				5EA113572A3DE35D00EA4342 /* API_PracticeApp.swift in Sources */,
+				5EA113A12A3EF56000EA4342 /* CoordinateToZscodeManager.swift in Sources */,
 				5EA1136A2A3E86AA00EA4342 /* ChargingStationModel.swift in Sources */,
 				5EA113742A3E9A4900EA4342 /* ChargeDataManager.swift in Sources */,
 				5EA113832A3EB7A500EA4342 /* GuideLineView.swift in Sources */,

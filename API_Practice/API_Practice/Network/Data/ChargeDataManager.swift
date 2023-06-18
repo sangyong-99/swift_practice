@@ -10,7 +10,10 @@ import Foundation
 class ChargeDataManager: ObservableObject {
     @Published var chargingStations: ChargingStation?
     
-    func fetchDatas(_ file: String){
+    func fetchDatas(_ file: String) -> ChargingStation? {
+        
+        
+        
         var request = URLRequest(url: URL(string: file)!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
         
@@ -44,7 +47,7 @@ class ChargeDataManager: ObservableObject {
         }
         
         task.resume()
-        
+        return chargingStations
         
     }
 }
