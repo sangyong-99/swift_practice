@@ -70,7 +70,7 @@
 				5EA1137D2A3EB50C00EA4342 /* View */,
 				5EA1136B2A3E899700EA4342 /* Network */,
 				5EA113662A3E864B00EA4342 /* Model */,
-				5EA113682A3E866800EA4342 /* Extension */,
+				5EA113682A3E866800EA4342 /* Function */,
 				5EA113672A3E865600EA4342 /* Utility */,
 				5EA113642A3E041900EA4342 /* API-Practice-Info.plist */,
 				5EA1135A2A3DE35E00EA4342 /* Assets.xcassets */,
@@ -115,12 +115,12 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		5EA113682A3E866800EA4342 /* Extension */ = {
+		5EA113682A3E866800EA4342 /* Function */ = {
 			isa = PBXGroup;
 			children = (
 				5EA113702A3E948800EA4342 /* SampleDataFunction.swift */,
 			);
-			path = Extension;
+			path = Function;
 			sourceTree = "<group>";
 		};
 		5EA1136B2A3E899700EA4342 /* Network */ = {
