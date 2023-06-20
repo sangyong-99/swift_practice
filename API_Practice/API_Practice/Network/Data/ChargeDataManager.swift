@@ -10,7 +10,7 @@ import Foundation
 class ChargeDataManager: ObservableObject {
     @Published var chargingStations: ChargingStation?
     
-    func fetchDatas(_ file: String) -> ChargingStation? {
+    func fetchDatas(_ file: String) {
         
         
         
@@ -32,6 +32,7 @@ class ChargeDataManager: ObservableObject {
                 DispatchQueue.main.async {
                     self.chargingStations = decodeData!
                     print("데이터\(self.chargingStations!.totalCount)개 JSON to DATA 삽입 완료")
+//                    print(decodeData)
                 }
             } catch {
                 print("Error decoding data: \(error)")
@@ -47,7 +48,6 @@ class ChargeDataManager: ObservableObject {
         }
         
         task.resume()
-        return chargingStations
         
     }
 }

@@ -13,20 +13,20 @@
 import Foundation
 
 // MARK: - ZscodeData
-struct ZscodeData: Codable {
+class ZscodeData: Codable, ObservableObject {
     let meta: Meta
     let documents: [Document]
 }
 
 // MARK: - Document
-struct Document: Codable {
-    let regionType, code, addressName, region1DepthName: String?
-    let region2DepthName, region3DepthName, region4DepthName: String?
+class Document: Codable, ObservableObject {
+    let region_type, code, address_name, region_1depth_name: String?
+    let region_2depth_name, region_3depth_name, region_4depth_name: String?
     let x, y: Double?
 }
 
 // MARK: - Meta
-struct Meta: Codable {
-    let totalCount: Int
+class Meta: Codable, ObservableObject {
+    let total_count: Int
 }
 

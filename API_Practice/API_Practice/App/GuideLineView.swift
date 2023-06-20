@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GuideLineView: View {
     var body: some View {
-        Text("GuideLineView")
+        KakaoMapView()
     }
 }
 

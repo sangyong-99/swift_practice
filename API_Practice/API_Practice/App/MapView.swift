@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct MapView: View {
+    @EnvironmentObject var coordinateToZscodeManager: CoordinateToZscodeManager
+    
     var body: some View {
-        Text("Map View")
+        VStack {
+            Text((coordinateToZscodeManager.zscodeDatas?.documents[0].code)!)
+        }
+        .padding()
     }
 }
 
