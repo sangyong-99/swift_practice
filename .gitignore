@@ -1,0 +1,4 @@
+# Ignore Firebase configuration files
+SwiftuiFirebaseBootcamp/SwiftuiFirebaseBootcamp/GoogleService-Info.plist
+GoogleService-Info.plist
+GoogleService-Info.json

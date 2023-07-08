@@ -1,37 +1,20 @@
-//
-//  ContentView.swift
-//  swift_practice
-//
-//  Created by 신상용 on 2023/05/26.
-//
-
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
-    @State private var isVStackHidden: Bool = false
+    let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+    let geocoder = CLGeocoder()
+    let locale = Locale(identifier: "Ko-kr")
     
     var body: some View {
-        TestVStack(isHidden: $isVStackHidden).transition(.scale)
-        Button("변경") {
-            withAnimation {
-                isVStackHidden.toggle()
+        geocoder.reverseGeocodeLocation(findLocation, preferredLocale: locale) { [weak self] placemarks, _ in
+            guard let placemarks = placemarks,
+                  let address = placemarks.last
+            else { return }
+            DispatchQueue.main.async {
+                self?.=-----label.text = "" //하고싶은 액션 적기
             }
         }
-    }
-}
-
-// Group
-struct TestVStack: View {
-    @Binding var isHidden: Bool
-    
-    var body: some View {
-        Group {
-            Color.red
-            if isHidden {
-            Text("Group입니다")
-            }
-        }
-        .frame(width: 200, height: 200)
     }
 }
 
