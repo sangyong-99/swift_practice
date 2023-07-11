@@ -14,7 +14,7 @@ struct RootView: View {
     var body: some View {
         ZStack{
             NavigationStack {
-                Text("Settings")
+                SettingsView(showSignInView: $showSignInView)
             }
         }
         .onAppear {
@@ -24,7 +24,7 @@ struct RootView: View {
         }
         .fullScreenCover(isPresented: $showSignInView) {
             NavigationStack {
-                AuthenticationView()
+                AuthenticationView(showSignInView: $showSignInView)
             }
         }
         
