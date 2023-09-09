@@ -3,24 +3,8 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sangyong-shin/Desktop/practice/MyPlayground_prac.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=254&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=9&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=710258292.354242"
+         documentLocation = "file:///Users/sangyong-shin/Desktop/practice/MyPlayground_prac.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=31&amp;CharacterRangeLoc=109&amp;EndingColumnNumber=31&amp;EndingLineNumber=6&amp;StartingColumnNumber=0&amp;StartingLineNumber=6&amp;Timestamp=714715499.004324"
          selectedRepresentationIndex = "0">
       </LoggerValueHistoryTimelineItem>
-      <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sangyong-shin/Desktop/practice/MyPlayground_prac.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=254&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=9&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=710258292.3543659"
-         selectedRepresentationIndex = "0">
-      </LoggerValueHistoryTimelineItem>
-      <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sangyong-shin/Desktop/practice/MyPlayground_prac.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=254&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=9&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=710258292.354416"
-         selectedRepresentationIndex = "0">
-      </LoggerValueHistoryTimelineItem>
-   </TimelineItems>
-   <TimelineItems>
-      <LoggerValueHistoryTimelineItem
-         documentLocation = "documentLocation"
-         selectedRepresentationIndex = "selectedRepresentationIndex">
-      </LoggerValueHistoryTimelineItem>
-   </TimelineItems>
-   <TimelineItems>
    </TimelineItems>
 </Timeline>

@@ -7,41 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EA113292A3B3DF900EA4342 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA113282A3B3DF900EA4342 /* Constant.swift */; };
-		5EA1132B2A3BF06600EA4342 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1132A2A3BF06600EA4342 /* HideKeyboardExtension.swift */; };
-		5EA1132D2A3D4EDC00EA4342 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1132C2A3D4EDC00EA4342 /* BackgroundImageView.swift */; };
-		5EA1132F2A3D503300EA4342 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1132E2A3D503300EA4342 /* NewTaskItemView.swift */; };
-		5EDA926D2A39E18200B1D605 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA926C2A39E18200B1D605 /* DevoteApp.swift */; };
-		5EDA926F2A39E18200B1D605 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA926E2A39E18200B1D605 /* ContentView.swift */; };
-		5EDA92712A39E18300B1D605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA92702A39E18300B1D605 /* Assets.xcassets */; };
-		5EDA92742A39E18300B1D605 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA92732A39E18300B1D605 /* Preview Assets.xcassets */; };
-		5EDA92762A39E18300B1D605 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA92752A39E18300B1D605 /* Persistence.swift */; };
-		5EDA92792A39E18300B1D605 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA92772A39E18300B1D605 /* Devote.xcdatamodeld */; };
-		5EDA92822A39E2B800B1D605 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA927F2A39E2B800B1D605 /* sound-rise.mp3 */; };
-		5EDA92832A39E2B800B1D605 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA92802A39E2B800B1D605 /* sound-ding.mp3 */; };
-		5EDA92842A39E2B800B1D605 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA92812A39E2B800B1D605 /* sound-tap.mp3 */; };
+		5E865AAA2A89FF1B0056D1D2 /* ListRowItemVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E865AA92A89FF1B0056D1D2 /* ListRowItemVIew.swift */; };
+		5E9EB12B2A8B08390065306F /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB12A2A8B08390065306F /* CheckboxStyle.swift */; };
+		5EA10ABB2A8488E100A34747 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA10ABA2A8488E100A34747 /* DevoteApp.swift */; };
+		5EA10ABD2A8488E100A34747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA10ABC2A8488E100A34747 /* ContentView.swift */; };
+		5EA10ABF2A8488E200A34747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA10ABE2A8488E200A34747 /* Assets.xcassets */; };
+		5EA10AC22A8488E200A34747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA10AC12A8488E200A34747 /* Preview Assets.xcassets */; };
+		5EA10AC42A8488E200A34747 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA10AC32A8488E200A34747 /* Persistence.swift */; };
+		5EA10AC72A8488E200A34747 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EA10AC52A8488E200A34747 /* Devote.xcdatamodeld */; };
+		5EA10ADC2A848AB500A34747 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EA10AD92A848AB500A34747 /* sound-tap.mp3 */; };
+		5EA10ADD2A848AB500A34747 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EA10ADA2A848AB500A34747 /* sound-rise.mp3 */; };
+		5EA10ADE2A848AB500A34747 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EA10ADB2A848AB500A34747 /* sound-ding.mp3 */; };
+		5EADFFA52A88F96E00CE6B8D /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADFFA42A88F96E00CE6B8D /* BackgroundImageView.swift */; };
+		5EADFFA72A88FB1E00CE6B8D /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADFFA62A88FB1E00CE6B8D /* NewTaskItemView.swift */; };
+		5EADFFAB2A89015900CE6B8D /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADFFAA2A89015900CE6B8D /* BlankView.swift */; };
+		5EDAC4EC2A88952300C7BA03 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDAC4EB2A88952300C7BA03 /* Constant.swift */; };
+		5EDAC4EE2A88F19200C7BA03 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDAC4ED2A88F19200C7BA03 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5EA113282A3B3DF900EA4342 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		5EA1132A2A3BF06600EA4342 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
-		5EA1132C2A3D4EDC00EA4342 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
-		5EA1132E2A3D503300EA4342 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
-		5EDA92692A39E18200B1D605 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EDA926C2A39E18200B1D605 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
-		5EDA926E2A39E18200B1D605 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5EDA92702A39E18300B1D605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5EDA92732A39E18300B1D605 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5EDA92752A39E18300B1D605 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		5EDA92782A39E18300B1D605 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
-		5EDA927F2A39E2B800B1D605 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
-		5EDA92802A39E2B800B1D605 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
-		5EDA92812A39E2B800B1D605 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
-		5EDA928B2A39E4BB00B1D605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5E865AA92A89FF1B0056D1D2 /* ListRowItemVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemVIew.swift; sourceTree = "<group>"; };
+		5E9EB12A2A8B08390065306F /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		5EA10AB72A8488E100A34747 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA10ABA2A8488E100A34747 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
+		5EA10ABC2A8488E100A34747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EA10ABE2A8488E200A34747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EA10AC12A8488E200A34747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EA10AC32A8488E200A34747 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5EA10AC62A8488E200A34747 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		5EA10AD92A848AB500A34747 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		5EA10ADA2A848AB500A34747 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		5EA10ADB2A848AB500A34747 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		5EA10AE52A8878E300A34747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5EADFFA42A88F96E00CE6B8D /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		5EADFFA62A88FB1E00CE6B8D /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		5EADFFAA2A89015900CE6B8D /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		5EDAC4EB2A88952300C7BA03 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5EDAC4ED2A88F19200C7BA03 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5EDA92662A39E18200B1D605 /* Frameworks */ = {
+		5EA10AB42A8488E100A34747 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,95 +57,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5EDA92602A39E18200B1D605 = {
+		5EA10AAE2A8488E100A34747 = {
 			isa = PBXGroup;
 			children = (
-				5EDA926B2A39E18200B1D605 /* Devote */,
-				5EDA926A2A39E18200B1D605 /* Products */,
+				5EA10AB92A8488E100A34747 /* Devote */,
+				5EA10AB82A8488E100A34747 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5EDA926A2A39E18200B1D605 /* Products */ = {
+		5EA10AB82A8488E100A34747 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA92692A39E18200B1D605 /* Devote.app */,
+				5EA10AB72A8488E100A34747 /* Devote.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5EDA926B2A39E18200B1D605 /* Devote */ = {
+		5EA10AB92A8488E100A34747 /* Devote */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA928B2A39E4BB00B1D605 /* Info.plist */,
-				5EDA926C2A39E18200B1D605 /* DevoteApp.swift */,
-				5EDA92862A39E42300B1D605 /* View */,
-				5EDA928A2A39E45800B1D605 /* Model */,
-				5EDA92892A39E43C00B1D605 /* Style */,
-				5EDA92882A39E43700B1D605 /* Utility */,
-				5EDA92872A39E43000B1D605 /* Extension */,
-				5EDA92852A39E41000B1D605 /* Sound */,
-				5EDA92702A39E18300B1D605 /* Assets.xcassets */,
-				5EDA92722A39E18300B1D605 /* Preview Content */,
+				5EA10AE52A8878E300A34747 /* Info.plist */,
+				5EA10ABA2A8488E100A34747 /* DevoteApp.swift */,
+				5EA10AE02A8877F900A34747 /* View */,
+				5EA10AE42A88783300A34747 /* Model */,
+				5EA10AE32A88781F00A34747 /* Style */,
+				5EA10AE22A88781600A34747 /* Utility */,
+				5EA10AE12A88780A00A34747 /* Extension */,
+				5EA10ADF2A85E45900A34747 /* Sound */,
+				5EA10AC02A8488E200A34747 /* Preview Content */,
+				5EA10ABE2A8488E200A34747 /* Assets.xcassets */,
 			);
 			path = Devote;
 			sourceTree = "<group>";
 		};
-		5EDA92722A39E18300B1D605 /* Preview Content */ = {
+		5EA10AC02A8488E200A34747 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA92732A39E18300B1D605 /* Preview Assets.xcassets */,
+				5EA10AC12A8488E200A34747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5EDA92852A39E41000B1D605 /* Sound */ = {
+		5EA10ADF2A85E45900A34747 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA92802A39E2B800B1D605 /* sound-ding.mp3 */,
-				5EDA927F2A39E2B800B1D605 /* sound-rise.mp3 */,
-				5EDA92812A39E2B800B1D605 /* sound-tap.mp3 */,
+				5EA10ADB2A848AB500A34747 /* sound-ding.mp3 */,
+				5EA10ADA2A848AB500A34747 /* sound-rise.mp3 */,
+				5EA10AD92A848AB500A34747 /* sound-tap.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
 		};
-		5EDA92862A39E42300B1D605 /* View */ = {
+		5EA10AE02A8877F900A34747 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA926E2A39E18200B1D605 /* ContentView.swift */,
-				5EA1132E2A3D503300EA4342 /* NewTaskItemView.swift */,
-				5EA1132C2A3D4EDC00EA4342 /* BackgroundImageView.swift */,
+				5EA10ABC2A8488E100A34747 /* ContentView.swift */,
+				5EADFFAA2A89015900CE6B8D /* BlankView.swift */,
+				5EADFFA62A88FB1E00CE6B8D /* NewTaskItemView.swift */,
+				5EADFFA42A88F96E00CE6B8D /* BackgroundImageView.swift */,
+				5E865AA92A89FF1B0056D1D2 /* ListRowItemVIew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5EDA92872A39E43000B1D605 /* Extension */ = {
+		5EA10AE12A88780A00A34747 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5EA1132A2A3BF06600EA4342 /* HideKeyboardExtension.swift */,
+				5EDAC4ED2A88F19200C7BA03 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		5EDA92882A39E43700B1D605 /* Utility */ = {
+		5EA10AE22A88781600A34747 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				5EA113282A3B3DF900EA4342 /* Constant.swift */,
+				5EDAC4EB2A88952300C7BA03 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		5EDA92892A39E43C00B1D605 /* Style */ = {
+		5EA10AE32A88781F00A34747 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				5E9EB12A2A8B08390065306F /* CheckboxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
 		};
-		5EDA928A2A39E45800B1D605 /* Model */ = {
+		5EA10AE42A88783300A34747 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5EDA92752A39E18300B1D605 /* Persistence.swift */,
-				5EDA92772A39E18300B1D605 /* Devote.xcdatamodeld */,
+				5EA10AC32A8488E200A34747 /* Persistence.swift */,
+				5EA10AC52A8488E200A34747 /* Devote.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,13 +156,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EDA92682A39E18200B1D605 /* Devote */ = {
+		5EA10AB62A8488E100A34747 /* Devote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EDA927C2A39E18300B1D605 /* Build configuration list for PBXNativeTarget "Devote" */;
+			buildConfigurationList = 5EA10ACA2A8488E200A34747 /* Build configuration list for PBXNativeTarget "Devote" */;
 			buildPhases = (
-				5EDA92652A39E18200B1D605 /* Sources */,
-				5EDA92662A39E18200B1D605 /* Frameworks */,
-				5EDA92672A39E18200B1D605 /* Resources */,
+				5EA10AB32A8488E100A34747 /* Sources */,
+				5EA10AB42A8488E100A34747 /* Frameworks */,
+				5EA10AB52A8488E100A34747 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -161,25 +170,25 @@
 			);
 			name = Devote;
 			productName = Devote;
-			productReference = 5EDA92692A39E18200B1D605 /* Devote.app */;
+			productReference = 5EA10AB72A8488E100A34747 /* Devote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5EDA92612A39E18200B1D605 /* Project object */ = {
+		5EA10AAF2A8488E100A34747 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					5EDA92682A39E18200B1D605 = {
+					5EA10AB62A8488E100A34747 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 5EDA92642A39E18200B1D605 /* Build configuration list for PBXProject "Devote" */;
+			buildConfigurationList = 5EA10AB22A8488E100A34747 /* Build configuration list for PBXProject "Devote" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,51 +196,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 5EDA92602A39E18200B1D605;
-			productRefGroup = 5EDA926A2A39E18200B1D605 /* Products */;
+			mainGroup = 5EA10AAE2A8488E100A34747;
+			productRefGroup = 5EA10AB82A8488E100A34747 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EDA92682A39E18200B1D605 /* Devote */,
+				5EA10AB62A8488E100A34747 /* Devote */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5EDA92672A39E18200B1D605 /* Resources */ = {
+		5EA10AB52A8488E100A34747 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EDA92832A39E2B800B1D605 /* sound-ding.mp3 in Resources */,
-				5EDA92822A39E2B800B1D605 /* sound-rise.mp3 in Resources */,
-				5EDA92742A39E18300B1D605 /* Preview Assets.xcassets in Resources */,
-				5EDA92842A39E2B800B1D605 /* sound-tap.mp3 in Resources */,
-				5EDA92712A39E18300B1D605 /* Assets.xcassets in Resources */,
+				5EA10ADE2A848AB500A34747 /* sound-ding.mp3 in Resources */,
+				5EA10ADC2A848AB500A34747 /* sound-tap.mp3 in Resources */,
+				5EA10ADD2A848AB500A34747 /* sound-rise.mp3 in Resources */,
+				5EA10AC22A8488E200A34747 /* Preview Assets.xcassets in Resources */,
+				5EA10ABF2A8488E200A34747 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5EDA92652A39E18200B1D605 /* Sources */ = {
+		5EA10AB32A8488E100A34747 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EDA92762A39E18300B1D605 /* Persistence.swift in Sources */,
-				5EA1132D2A3D4EDC00EA4342 /* BackgroundImageView.swift in Sources */,
-				5EDA926F2A39E18200B1D605 /* ContentView.swift in Sources */,
-				5EA1132B2A3BF06600EA4342 /* HideKeyboardExtension.swift in Sources */,
-				5EA113292A3B3DF900EA4342 /* Constant.swift in Sources */,
-				5EDA92792A39E18300B1D605 /* Devote.xcdatamodeld in Sources */,
-				5EDA926D2A39E18200B1D605 /* DevoteApp.swift in Sources */,
-				5EA1132F2A3D503300EA4342 /* NewTaskItemView.swift in Sources */,
+				5E865AAA2A89FF1B0056D1D2 /* ListRowItemVIew.swift in Sources */,
+				5EA10AC42A8488E200A34747 /* Persistence.swift in Sources */,
+				5EADFFA52A88F96E00CE6B8D /* BackgroundImageView.swift in Sources */,
+				5EA10ABD2A8488E100A34747 /* ContentView.swift in Sources */,
+				5EDAC4EE2A88F19200C7BA03 /* HideKeyboardExtension.swift in Sources */,
+				5EADFFAB2A89015900CE6B8D /* BlankView.swift in Sources */,
+				5EDAC4EC2A88952300C7BA03 /* Constant.swift in Sources */,
+				5EA10AC72A8488E200A34747 /* Devote.xcdatamodeld in Sources */,
+				5EA10ABB2A8488E100A34747 /* DevoteApp.swift in Sources */,
+				5E9EB12B2A8B08390065306F /* CheckboxStyle.swift in Sources */,
+				5EADFFA72A88FB1E00CE6B8D /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5EDA927A2A39E18300B1D605 /* Debug */ = {
+		5EA10AC82A8488E200A34747 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		5EDA927B2A39E18300B1D605 /* Release */ = {
+		5EA10AC92A8488E200A34747 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,7 +357,7 @@
 			};
 			name = Release;
 		};
-		5EDA927D2A39E18300B1D605 /* Debug */ = {
+		5EA10ACB2A8488E200A34747 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -374,7 +386,7 @@
 			};
 			name = Debug;
 		};
-		5EDA927E2A39E18300B1D605 /* Release */ = {
+		5EA10ACC2A8488E200A34747 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -406,20 +418,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5EDA92642A39E18200B1D605 /* Build configuration list for PBXProject "Devote" */ = {
+		5EA10AB22A8488E100A34747 /* Build configuration list for PBXProject "Devote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EDA927A2A39E18300B1D605 /* Debug */,
-				5EDA927B2A39E18300B1D605 /* Release */,
+				5EA10AC82A8488E200A34747 /* Debug */,
+				5EA10AC92A8488E200A34747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EDA927C2A39E18300B1D605 /* Build configuration list for PBXNativeTarget "Devote" */ = {
+		5EA10ACA2A8488E200A34747 /* Build configuration list for PBXNativeTarget "Devote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EDA927D2A39E18300B1D605 /* Debug */,
-				5EDA927E2A39E18300B1D605 /* Release */,
+				5EA10ACB2A8488E200A34747 /* Debug */,
+				5EA10ACC2A8488E200A34747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -427,17 +439,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5EDA92772A39E18300B1D605 /* Devote.xcdatamodeld */ = {
+		5EA10AC52A8488E200A34747 /* Devote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5EDA92782A39E18300B1D605 /* Devote.xcdatamodel */,
+				5EA10AC62A8488E200A34747 /* Devote.xcdatamodel */,
 			);
-			currentVersion = 5EDA92782A39E18300B1D605 /* Devote.xcdatamodel */;
+			currentVersion = 5EA10AC62A8488E200A34747 /* Devote.xcdatamodel */;
 			path = Devote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 5EDA92612A39E18200B1D605 /* Project object */;
+	rootObject = 5EA10AAF2A8488E100A34747 /* Project object */;
 }

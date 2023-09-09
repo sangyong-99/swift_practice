@@ -2,7 +2,7 @@
 //  BackgroundImageView.swift
 //  Devote
 //
-//  Created by 신상용 on 2023/06/17.
+//  Created by 신상용 on 2023/08/13.
 //
 
 import SwiftUI

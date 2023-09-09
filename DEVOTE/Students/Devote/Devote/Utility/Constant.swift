@@ -2,12 +2,13 @@
 //  Constant.swift
 //  Devote
 //
-//  Created by 신상용 on 2023/06/15.
+//  Created by 신상용 on 2023/08/13.
 //
 
 import SwiftUI
 
 // MARK: - FORMATTER
+
 let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
@@ -22,3 +23,5 @@ var backgroundGradient: LinearGradient {
 }
 
 // MARK: - UX
+
+

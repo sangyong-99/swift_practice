@@ -2,20 +2,20 @@
 //  Persistence.swift
 //  Devote
 //
-//  Created by 신상용 on 2023/06/14.
+//  Created by 신상용 on 2023/08/10.
 //
 
 import CoreData
 
 struct PersistenceController {
+    
     // MARK: - 1. PERSISTENT CONTROLLER
     static let shared = PersistenceController()
-
     
     // MARK: - 2. PERSISTENT CONTAINER
     let container: NSPersistentContainer
-
-    // MARK: - 3. initialization(load the persistent store)
+    
+    // MARK: - 3. INITIALIZATION (load the presistent store)
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Devote")
         if inMemory {
@@ -43,7 +43,6 @@ struct PersistenceController {
         do {
             try viewContext.save()
         } catch {
-            
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }

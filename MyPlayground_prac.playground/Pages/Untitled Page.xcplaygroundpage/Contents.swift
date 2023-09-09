@@ -1,9 +1,7 @@
+var myOtherBool: Bool? = nil
 
-func chooseStepFunction(backward: Bool) -> (Int) -> Int {
-    func stepForward(input : Int) -> Int {return input + 1}
-    func stepBackward(input: Int) -> Int {return input - 1}
-    return backward ? stepBackward : stepForward
-}
+let newValue: Bool? = myOtherBool
 
-var currentValue = -4
+let newValue2: Bool = myOtherBool ?? false
 
+type(of: newValue2.description)
