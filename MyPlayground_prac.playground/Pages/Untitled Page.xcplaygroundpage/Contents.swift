@@ -1,7 +1,61 @@
-var myOtherBool: Bool? = nil
+protocol AdvancedLifeSupport {
+    func performCPR()
+}
 
-let newValue: Bool? = myOtherBool
+class EmergencyCallHandler {
+    var delegate: AdvancedLifeSupport?
+    
+    func accessSituation() {
+        print("Can you tell me what happened?")
+    }
+    
+    func medicalEmergency() {
+        delegate?.performCPR()
+        
+    }
+}
 
-let newValue2: Bool = myOtherBool ?? false
+struct Paramedic: AdvancedLifeSupport {
+    
+    init(handler: EmergencyCallHandler) {
+        handler.delegate = self
+    }
+    
+    func performCPR() {
+        print("The paramedic does chest compresions, 30 per second.")
+    }
+}
 
-type(of: newValue2.description)
+class Doctor: AdvancedLifeSupport {
+    
+    init(handler: EmergencyCallHandler) {
+        handler.delegate = self
+    }
+    
+    func performCPR() {
+        print("The doctor does chest compressions, 30 per second.")
+    }
+    
+    func useStethescope() {
+        print("Listening for heart sounds.")
+    }
+}
+
+class Surgeon: Doctor {
+    override func performCPR() {
+        super.performCPR()
+        print("Sings staying alive by the BeeGees")
+    }
+    
+    func useElectricDrill() {
+        print("Whirr...")
+    }
+}
+
+let emilio = EmergencyCallHandler()
+let angela = Surgeon(handler: emilio)
+
+emilio.accessSituation()
+emilio.medicalEmergency()
+
+
